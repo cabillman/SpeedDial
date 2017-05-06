@@ -1,0 +1,4 @@
+language: python
+script:
+  - sudo pip install s3cmd
+  - python --version
