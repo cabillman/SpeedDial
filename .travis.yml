@@ -1,5 +1,5 @@
 language: python
 script:
-  - sudo pip install s3cmd
+  - sudo pip install awscli
   - python --version
-  - s3cmd sync --delete-removed -M -r . s3://$AWS_BUCKET_NAME
+  - aws s3 sync . s3://$AWS_BUCKET_NAME
